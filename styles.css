@@ -46,7 +46,8 @@ h2 {
 }
 
 video {
-    width: 70%;
+    max-width: 800px;
+    width: 90%;
     margin: 0 auto;
     border-radius: 10px;
 }
