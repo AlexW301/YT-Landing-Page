@@ -93,3 +93,13 @@ button:hover {
    padding: 16px 32px;
    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    position: absolute;
+    filter: opacity(.7);
+    bottom: 10px;
+    left: 0;
+}
