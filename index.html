@@ -8,40 +8,87 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./styles.css">
+    <!-- Global site tag (gtag.js) - Google Ads: 713281349 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-713281349"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-713281349');
+</script>
+<!-- Event snippet for Submit lead form YT conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-713281349/pS7cCIz509oCEMWej9QC',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
 </head>
 
 <body>
-<div class="container">
-    <h1>Get Pre-Approved  Now!</h1>
-                <div class="content">
-                    <video controls> 
-                        <source src="./test - HD 1080p.mov"
-                                type="video/mp4">
-                    </video>
-    
-                <div class="input-fields">
-                    <div class="name">
-                        <h2>name</h2>
-                        <input type="text" class="name-input">
-                    </div>
-                    <div class="email">
-                        <h2>email</h2>
-                        <input type="text" class="email-input">
-                    </div>
+    <div class="container">
+        <h1>Almost There!</h1>
+        <div class="content">
+            <video controls>
+                <source src="./test - HD 1080p.mov" type="video/mp4">
+            </video>
+
+            <div class="input-fields">
+                <div class="name">
+                    <h2>Full Name</h2>
+                    <input type="text" class="name-input">
                 </div>
+                <div class="email">
+                    <h2>email</h2>
+                    <input type="text" class="email-input">
+                </div>
+            </div>
 
-                <button>Get Pre-Approved</button>
-                
-    
-
-</div>
-
-
-
+            <button class="conversion-btn">Get Pre-Approved</button>
 
 
-<script src="./index.js"></script>
+
+        </div>
+
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyCqlmYOfZh8myNtb9lfoUNwx7Y9W2pVaUE",
+                authDomain: "ad-landing-page.firebaseapp.com",
+                projectId: "ad-landing-page",
+                storageBucket: "ad-landing-page.appspot.com",
+                messagingSenderId: "334978120813",
+                appId: "1:334978120813:web:761b88dc14b25b4ac79364",
+                measurementId: "G-S942L2TZS2"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script src="./index.js"></script>
 </body>
 
 </html>
