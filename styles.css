@@ -37,7 +37,7 @@ h2 {
 }
 
 .container {
-    width: 800px;
+    width: 90%;
     margin: 200px auto;
 }
 
@@ -46,7 +46,7 @@ h2 {
 }
 
 video {
-    width: 700px;
+    width: 70%;
     margin: 0 auto;
     border-radius: 10px;
 }
