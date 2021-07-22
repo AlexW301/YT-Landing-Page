@@ -97,9 +97,24 @@ button:hover {
 .logo {
     width: 150px;
     height: auto;
+    margin: 20px auto 0;
     display: block;
-    position: absolute;
-    filter: opacity(.7);
-    bottom: 10px;
-    left: 0;
+}
+
+.container a:link,
+.container a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.5);
+    font-size: large;
+    letter-spacing: 2.5px;
+}
+
+.container a:hover,
+.container a:active {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.5);
+    font-size: large;
+    letter-spacing: 2.5px;
 }
