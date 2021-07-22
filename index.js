@@ -28,10 +28,13 @@ let conversion = () => {
 
         // TRACK CONVERSION
         gtag_report_conversion()
+        //
     } else if (usersName.indexOf(' ') === -1) {
         // IF NAME IS NOT FULL
         alert('Please enter your full name')
     }
+    // GO TO BLINK LINK
+    window.location.href = 'https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/'
 }
 
 document.querySelector('.conversion-btn').addEventListener('click', conversion)
