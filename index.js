@@ -1,3 +1,4 @@
+document.querySelector('video').play()
 
 let conversion = () => {
     // GET VALUES FROM DOM
