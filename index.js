@@ -1,3 +1,4 @@
+document.click()
 
 let conversion = () => {
     // GET VALUES FROM DOM
