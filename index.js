@@ -1,3 +1,4 @@
+document.querySelector('video').muted = false
 
 let conversion = () => {
     // GET VALUES FROM DOM
