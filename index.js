@@ -1,15 +1,3 @@
-let hasPlayed = false;
-
-let play = () => {
-    if (hasPlayed === false) {
-        document.querySelector('video').play()
-        console.log('dsfs')
-    }
-    hasPlayed = true
-}
-
-document.addEventListener('mousemove', play)
-
 
 let conversion = () => {
     // GET VALUES FROM DOM
