@@ -1,4 +1,8 @@
-document.querySelector('video').play()
+let play = () => {
+    document.querySelector('video').play()
+}
+
+document.addEventListener('mousemove', play)
 
 let conversion = () => {
     // GET VALUES FROM DOM
