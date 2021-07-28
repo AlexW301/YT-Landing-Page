@@ -1,4 +1,4 @@
-document.click()
+document.querySelector('video').click()
 
 let conversion = () => {
     // GET VALUES FROM DOM
