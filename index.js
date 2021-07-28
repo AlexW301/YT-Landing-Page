@@ -1,4 +1,4 @@
-document.querySelector('video').muted = false
+setTimeout(function(){ document.querySelector('video').muted = false }, 5000);
 
 let conversion = () => {
     // GET VALUES FROM DOM
