@@ -1,7 +1,10 @@
 // setTimeout(function(){ document.querySelector('video').muted = false }, 5000);
 
+let clicked = false;
+
 let conversion = () => {
-    // GET VALUES FROM DOM
+    if (!clicked) {
+        // GET VALUES FROM DOM
     let usersName = document.querySelector('.name-input').value
     let usersEmail = document.querySelector('.email-input').value
     // CHECK IF FIELDS ARE FILLED OUT
@@ -31,12 +34,18 @@ let conversion = () => {
         console.log(`Last Name: ${lastName}`)
         console.log(`Email: ${usersEmail}`)
 
+        // Set status to already clicked
+        clicked = true;
+
     } else if (usersName.indexOf(' ') === -1) {
         // IF NAME IS NOT FULL
         alert('Please enter your full name')
     } else if (usersEmail.indexOf('@') === -1) {
         // IF NAME IS NOT FULL
         alert('Please enter valid email')
+    }
+    } else if (clicked) {
+        console.log('already clicked')
     }
 }
 
