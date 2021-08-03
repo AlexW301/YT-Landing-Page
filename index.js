@@ -28,16 +28,14 @@ let conversion = () => {
         })
             .catch((error) => {
                 console.error("Error adding document: ", error);
-                
-                 // DELETE // ONLY WHILE ZAP IS DOWN ////
-                    gtag_report_conversion('https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/')
-                ///////////
             });
         // CONSOLE LOG COLLECTED INFORMATION
         console.log(`First Name: ${firstName}`)
         console.log(`Last Name: ${lastName}`)
         console.log(`Email: ${usersEmail}`)
-
+             // DELETE // ONLY WHILE ZAP IS DOWN ////
+             gtag_report_conversion('https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/')
+             ///////////
         // Set status to already clicked
         clicked = true;
 
