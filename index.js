@@ -22,7 +22,7 @@ let conversion = () => {
         }).then((docRef) => {
             console.log("Document written with ID: ", docRef.id);
             // TRACK CONVERSION and go to link
-            gtag_report_conversion('https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/')
+            gtag_report_conversion('https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/michaelcomerfordg')
             // GO TO BLINK LINK do not use this
             // window.location.href = 'https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/'
         })
